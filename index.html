@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Anirban Santra</title>
+  <meta name="description"
+    content="Portfolio of Anirban Santra — AI/ML and Computer Vision Developer specializing in intelligent systems, machine learning, computer vision, research, and software development.">
+  <meta name="keywords"
+    content="Anirban Santra, AI, ML, Machine Learning, Computer Vision, Developer, Portfolio, Research, Python, Deep Learning">
+  <meta name="author" content="Anirban Santra">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anirban Santra | AI/ML Engineer &amp; Software Developer">
+  <meta property="og:description"
+    content="Portfolio of Anirban Santra — AI/ML and Computer Vision Developer specializing in intelligent systems, machine learning, computer vision, research, and software development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content=""><!-- TODO: Replace with actual GitHub Pages URL -->
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anirban Santra | AI/ML &amp; Computer Vision Developer">
+  <meta name="twitter:description"
+    content="Portfolio of Anirban Santra — AI/ML and Computer Vision Developer specializing in intelligent systems, machine learning, computer vision, research, and software development.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href=""><!-- TODO: Replace with actual GitHub Pages URL -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/indian_flag_logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SCROLL PROGRESS
+       ============================================================ -->
+  <div class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <!-- AS Monogram Logo -->
+      <a href="#home" class="nav__logo" aria-label="Anirban Santra — Home">
+        <img src="assets/icons/indian_flag_logo.png" alt="Indian Flag" class="nav__logo-flag">
+      </a>
+
+      <div class="nav__overlay" aria-hidden="true"></div>
+
+      <ul class="nav__links" role="menubar">
+        <li><a href="#home" class="nav__link active" role="menuitem">Home</a></li>
+        <li><a href="#about" class="nav__link" role="menuitem">About</a></li>
+        <li><a href="#experience" class="nav__link" role="menuitem">Experience</a></li>
+        <li><a href="#projects" class="nav__link" role="menuitem">Projects</a></li>
+        <li><a href="#research" class="nav__link" role="menuitem">Research</a></li>
+        <li><a href="#skills" class="nav__link" role="menuitem">Skills</a></li>
+        <li><a href="#education" class="nav__link" role="menuitem">Education</a></li>
+        <li><a href="#certifications" class="nav__link" role="menuitem">Certifications</a></li>
+        <li><a href="#photos" class="nav__link" role="menuitem">Photos</a></li>
+        <li><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav__right">
+        <!-- TODO: Place your actual CV at assets/Anirban-Santra-CV.pdf -->
+        <a href="C:/Users/anirb/OneDrive/Desktop/AS Portfolio/assets/AnirbanSantra_Aug_18.pdf" class="nav__cv-btn"
+          download aria-label="Download CV">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="display:inline;vertical-align:middle;margin-right:4px">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          CV
+        </a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="nav__hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="home" class="hero">
+    <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero__grid">
+        <!-- Left: Text Content -->
+        <div class="hero__content">
+          <div class="hero__status reveal">
+            <span class="hero__status-dot" aria-hidden="true"></span>
+            Currently building at <strong style="margin-left: 4px;">SOFTTHINK</strong>
+          </div>
+
+          <h1 class="hero__name reveal reveal-delay-1">Anirban Santra</h1>
+          <p class="hero__title reveal reveal-delay-2">AI/ML Engineer &amp; Software Developer</p>
+          <p class="hero__description reveal reveal-delay-3">
+            Building intelligent systems at the intersection of AI, computer vision, research, and real-world
+            engineering.
+          </p>
+
+          <p class="hero__location reveal reveal-delay-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Greater Kolkata Area, India
+          </p>
+
+          <div class="hero__tags reveal reveal-delay-3">
+            <span>Developer</span>
+            <span class="separator" aria-hidden="true"></span>
+            <span>Engineer</span>
+            <span class="separator" aria-hidden="true"></span>
+            <span>AI/ML</span>
+            <span class="separator" aria-hidden="true"></span>
+            <span>Researcher</span>
+            <span class="separator" aria-hidden="true"></span>
+            <span>Computer Vision</span>
+          </div>
+
+          <div class="hero__actions reveal reveal-delay-4">
+            <a href="#projects" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              View My Work
+            </a>
+            <!-- TODO: Place your actual CV at assets/Anirban-Santra-CV.pdf -->
+            <a href="C:/Users/anirb/OneDrive/Desktop/AS Portfolio/assets/AnirbanSantra_Aug_18.pdf"
+              class="btn btn--secondary" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn--accent">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Photo + Signature -->
+        <div class="hero__photo-col reveal reveal-delay-2">
+          <div class="hero__photo-wrapper">
+            <!--
+              TODO: Replace the placeholder below with your actual photo.
+              Place the photo at: assets/images/anirban-santra.jpg
+              Recommended: square or near-square image, minimum 500×500px.
+            -->
+            <div class="hero__photo-placeholder" id="heroPhotoPlaceholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Add photo</span>
+            </div>
+            <img src="C:/Users/anirb/OneDrive/Desktop/AS Portfolio_4/assets/images/photos/anirban_professional_photo.png"
+              alt="Anirban Santra — AI/ML Engineer & Software Developer" loading="eager" style="display:none"
+              onload="this.style.display='block'; document.getElementById('heroPhotoPlaceholder').style.display='none';"
+              onerror="this.style.display='none';">
+          </div>
+          <p class="hero__signature">Anirban Santra</p>
+          <p class="hero__photo-role">AI/ML Engineer &amp; Software Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">01 / About</p>
+        <h2 class="section__title">Background &amp; Focus</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I am a Software Developer with a postgraduate degree M.Sc. in Computer Science from Ramakrishna Mission
+            Vidyamandira, Belur Math, Howrah, West Bengal. I have a strong interest in Artificial Intelligence, Machine
+            Learning, Computer Vision, Data Science, and intelligent software systems.
+          </p>
+          <p>
+            My experience includes developing practical applications involving industrial safety monitoring, face
+            recognition, medical image analysis, UAV tracking, sensor fusion, and data driven web applications.
+          </p>
+          <p>
+            I combine research oriented thinking with practical software development to build efficient and meaningful
+            solutions for real world challenges.
+          </p>
+        </div>
+
+        <div class="quick-facts reveal reveal-delay-2">
+          <h3 class="quick-facts__title">At a Glance</h3>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Education</span>
+            <span class="quick-facts__value">M.Sc. Computer Science</span>
+          </div>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Specialization</span>
+            <span class="quick-facts__value">AI / ML / Computer Vision / Software</span>
+          </div>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Location</span>
+            <span class="quick-facts__value">Greater Kolkata Area, India</span>
+          </div>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Current Organisation</span>
+            <span class="quick-facts__value">SOFTTHINK Intelligent Solutions Pvt. Ltd.</span>
+          </div>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Research Focus</span>
+            <span class="quick-facts__value">UAV Tracking &amp; Intelligent Vision</span>
+          </div>
+          <div class="quick-facts__item">
+            <span class="quick-facts__label">Date of Birth</span>
+            <span class="quick-facts__value">01 August, 2003</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-strip reveal">
+        <div class="stat-item">
+          <div class="stat-item__value">8.50<span style="font-size:0.6em;opacity:0.7">/10</span></div>
+          <div class="stat-item__label">M.Sc. CGPA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value">7.67<span style="font-size:0.6em;opacity:0.7">/10</span></div>
+          <div class="stat-item__label">B.Sc. CGPA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value">84.8<span style="font-size:0.6em;opacity:0.7">%</span></div>
+          <div class="stat-item__label"> WBCHSE</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__value">82.71<span style="font-size:0.6em;opacity:0.7">%</span></div>
+          <div class="stat-item__label">WBBSE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+       ============================================================ -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">02 / Experience</p>
+        <h2 class="section__title">Professional Journey</h2>
+        <p class="section__subtitle">A timeline of roles, projects, and contributions across industry and research.</p>
+      </div>
+
+      <div class="timeline stagger-children">
+        <!-- SOFTTHINK -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__header">
+            <!-- TODO: Replace with official SOFTTHINK logo at assets/logos/companies/softthink.png -->
+            <div class="timeline__logo" data-tooltip="SOFTTHINK Intelligent Solutions Pvt. Ltd.">
+              <img src="assets/logos/companies/softthink logo.png" alt="SOFTTHINK Intelligent Solutions Pvt. Ltd. logo"
+                class="timeline__logo-img">
+              <!--<span class="timeline__logo-text">ST</span>-->
+            </div>
+          </div>
+          <div class="timeline__date">September 2026 – Present</div>
+          <h3 class="timeline__role">Developer</h3>
+          <p class="timeline__company">SOFTTHINK Intelligent Solutions Pvt. Ltd.</p>
+          <p class="timeline__location">Kolkata, West Bengal, India</p>
+          <span class="timeline__tag">
+            <span class="hero__status-dot" style="width:6px;height:6px" aria-hidden="true"></span>
+            Current Position
+          </span>
+          <a href="https://www.softthink.co.in/" class="timeline__link" target="_blank" rel="noopener noreferrer">
+            softthink.co.in
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+
+
+        </div>
+
+
+
+        <!-- FACEOFF -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__header">
+            <!-- TODO: Replace with official FACEOFF Technologies logo at assets/logos/companies/faceoff.png -->
+            <div class="timeline__logo" data-tooltip="FACEOFF Technologies">
+              <img src="assets/logos/companies/faceoff logo.png" alt="FACEOFF Technologies" class="timeline__logo-img">
+              <!--<span class="timeline__logo-text">FO</span>-->
+            </div>
+          </div>
+          <div class="timeline__date">July 2025 – July 2026</div>
+          <h3 class="timeline__role">Software Developer</h3>
+          <p class="timeline__company">FACEOFF Technologies Pvt. Ltd.</p>
+          <p class="timeline__location">Delhi, India (Remote)</p>
+          <p class="timeline__description">
+            Built a computer vision-based supervisor detection and face recognition system for real-time industrial
+            safety monitoring and CCTV person tracking, with automated PDF reporting using Python.
+          </p>
+          <span class="timeline__tag" style="margin-right: 8px">Private / Internal Project</span>
+          <a href="https://faceoff.world/" class="timeline__link" target="_blank" rel="noopener noreferrer">
+            faceoff.world
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- WBP AI Cell -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__header">
+            <!-- Official logo not available — text fallback -->
+            <div class="timeline__logo" data-tooltip="WBP AI Cell">
+              <img src="assets/logos/companies/wbp logo.png" alt="West Bengal Police" class="timeline__logo-img">
+              <!-- <span class="timeline__logo-text">WBP</span> -->
+            </div>
+          </div>
+          <div class="timeline__date">December 2025 – April 2026</div>
+          <h3 class="timeline__role">AI Engineer</h3>
+          <p class="timeline__company">West Bengal Police Artificial Intelligence Cell, Kolkata</p>
+          <p class="timeline__location">Bhavani Bhavan Police Headquarters, Alipore, Kolkata, West Bengal, India -
+            700027</p>
+          <p class="timeline__description">
+            Developed an AI system for prostate cancer diagnosis using histopathology images, in collaboration with SSKM
+            Hospital, Kolkata.
+          </p>
+        </div>
+
+        <!-- RKM Vidyamandira -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__header">
+            <!-- TODO: Replace with official RKM Vidyamandira logo at assets/logos/institutions/rkmv.png -->
+            <div class="timeline__logo" data-tooltip="Ramakrishna Mission Vidyamandira">
+              <img src="assets/logos/companies/rkm logo.png" alt="RKMV" class="timeline__logo-img">
+              <!-- <span class="timeline__logo-text">RKM</span> -->
+            </div>
+          </div>
+          <div class="timeline__date">August 2024 – July 2025</div>
+          <h3 class="timeline__role">Project Intern</h3>
+          <p class="timeline__company">Dept. of Computer Science &amp; Electronics, Ramakrishna Mission Vidyamandira
+          </p>
+          <p class="timeline__location">Belur Math, Howrah, West Bengal, India - 711202</p>
+          <p class="timeline__description">
+            Built an EKF-based multi-sensor UAV tracking system combining RF, radar, acoustic, and optical sensors,
+            achieving a reported 12.5% improvement in tracking accuracy. The work was published as research in DoSIER
+            2024.
+          </p>
+          <span class="timeline__tag" style="margin-right: 8px">Research Intern</span>
+          <a href="https://ceur-ws.org/Vol-3900/Paper19.pdf" class="timeline__link" target="_blank"
+            rel="noopener noreferrer">
+            READ MORE
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">03 / Projects</p>
+        <h2 class="section__title">Selected Work</h2>
+        <p class="section__subtitle">AI-driven solutions, research prototypes, and software built for real-world impact.
+        </p>
+      </div>
+
+      <div class="projects__grid stagger-children">
+        <!-- Project 01 -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">01</span>
+            <span class="project-card__badge project-card__badge--private">Private / Internal</span>
+          </div>
+          <p class="project-card__category">AI / Computer Vision</p>
+          <h3 class="project-card__title">Industrial Safety CCTV Face Recognition System</h3>
+          <p class="project-card__description">
+            Real-time computer vision system for supervisor detection, face recognition, CCTV person tracking, and
+            automated reporting.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Face Recognition</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Tracking</span>
+            <span class="tech-tag">PDF Reporting</span>
+          </div>
+          <p style="font-size:var(--fs-xs);color:var(--text-tertiary);margin-bottom:var(--space-3);">
+            Built at <a href="https://faceoff.world/" target="_blank" rel="noopener noreferrer"
+              style="color:var(--blue-royal);font-weight:500;">FACEOFF Technologies</a>
+          </p>
+          <button class="project-card__expand" aria-label="Toggle project details">
+            <span class="expand-text">View Details</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="project-card__details">
+            <div class="project-card__details-inner">
+              <p>This system was developed for industrial environments requiring real-time monitoring of supervisory
+                personnel. It utilizes face recognition to detect and verify supervisors via CCTV feeds, tracks
+                individuals across camera views, and generates automated PDF reports. Developed as a private company
+                project at FACEOFF Technologies.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">02</span>
+            <span class="project-card__badge project-card__badge--private">Private / Internal</span>
+          </div>
+          <p class="project-card__category">Medical AI</p>
+          <h3 class="project-card__title">Prostate Cancer Diagnosis AI</h3>
+          <p class="project-card__description">
+            AI-assisted diagnostic system using histopathology images for prostate cancer analysis, developed in
+            collaboration with SSKM Hospital.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">Histopathology</span>
+            <span class="tech-tag">Medical AI</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Image Analysis</span>
+          </div>
+          <p style="font-size:var(--fs-xs);color:var(--text-tertiary);margin-bottom:var(--space-3);">
+            WBP AI Cell × SSKM Hospital, Kolkata
+          </p>
+          <button class="project-card__expand" aria-label="Toggle project details">
+            <span class="expand-text">View Details</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="project-card__details">
+            <div class="project-card__details-inner">
+              <p>This AI system was developed at the WBP AI Cell in collaboration with SSKM Hospital, Kolkata, to assist
+                in the diagnosis of prostate cancer from histopathology images. The project involved processing medical
+                imaging data and applying deep learning techniques for diagnostic support.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">03</span>
+            <span class="project-card__badge project-card__badge--research">Research</span>
+          </div>
+          <p class="project-card__category">Research</p>
+          <h3 class="project-card__title">Multi-Sensor Fusion UAV Tracking System</h3>
+          <p class="project-card__description">
+            An EKF-based UAV tracking system combining RF, radar, acoustic, and optical sensors with a reported 12.5%
+            improvement in tracking accuracy.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">EKF</span>
+            <span class="tech-tag">Sensor Fusion</span>
+            <span class="tech-tag">UAV</span>
+            <span class="tech-tag">Tracking</span>
+            <span class="tech-tag">Computer Vision</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#research" class="btn btn--accent btn--sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              View Research
+            </a>
+          </div>
+          <button class="project-card__expand" aria-label="Toggle project details">
+            <span class="expand-text">View Details</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="project-card__details">
+            <div class="project-card__details-inner">
+              <p>This research project developed a multi-sensor fusion framework using Extended Kalman Filtering for UAV
+                tracking. Four sensor modalities — RF, radar, acoustic, and optical — were combined to achieve a
+                reported 12.5% improvement in tracking accuracy. Published in CEUR Workshop Proceedings as part of
+                DoSIER 2024.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">04</span>
+            <span class="project-card__badge project-card__badge--academic">Web Development</span>
+          </div>
+          <p class="project-card__category">Web Development</p>
+          <h3 class="project-card__title">DAS-STAT</h3>
+          <p class="project-card__description">
+            Web-based data repository platform for college faculty with automated Excel generation and administrative
+            controls.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <p style="font-size:var(--fs-xs);color:var(--text-tertiary);margin-bottom:var(--space-3);">
+            B.Sc. Final Year Project
+          </p>
+          <div class="project-card__actions">
+            <a href="assets/images/certificates/DAS-STAT_Certificate.png" class="btn btn--accent btn--sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              Certificate
+            </a>
+          </div>
+
+
+          <button class="project-card__expand" aria-label="Toggle project details">
+            <span class="expand-text">View Details</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="project-card__details">
+            <div class="project-card__details-inner">
+              <p>DAS-STAT is a web-based data repository platform built as a B.Sc. final year project. The system
+                provides college faculty with tools for managing institutional data, generating automated Excel reports,
+                and performing administrative operations through a web interface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESEARCH & PUBLICATIONS
+       ============================================================ -->
+  <section id="research" class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">04 / Research</p>
+        <h2 class="section__title">Publications</h2>
+        <p class="section__subtitle">Peer-reviewed research in intelligent systems and sensor fusion.</p>
+      </div>
+
+      <div class="research-card reveal">
+        <span class="research-card__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          Published Research
+        </span>
+
+        <h3 class="research-card__title">Enhanced UAV Tracking through Multi-Sensor Fusion and Extended Kalman Filtering
+        </h3>
+
+        <p class="research-card__authors">
+          Bodhisattwa Baidya, Atanu Mondal, Sarbajit Manna, Gourab Das, <strong>Anirban Santra</strong>, Arkaprava
+          Chakraborty
+        </p>
+
+        <p class="research-card__venue">
+          CEUR Workshop Proceedings — Vol-3900, 2024
+        </p>
+
+        <div class="research-card__actions">
+          <a href="https://ceur-ws.org/Vol-3900/" class="btn btn--primary btn--sm" target="_blank"
+            rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Read Paper
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=GCUwURkAAAAJ" class="btn btn--secondary btn--sm"
+            target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a>
+          <button class="btn btn--accent btn--sm" data-action="cite">
+            Cite Paper
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Citation Modal -->
+  <div class="citation-modal" id="citationModal" role="dialog" aria-labelledby="citationModalTitle" aria-modal="true">
+    <div class="citation-modal__content">
+      <div class="citation-modal__header">
+        <h4 class="citation-modal__title" id="citationModalTitle">Cite this Paper</h4>
+        <button class="citation-modal__close" aria-label="Close citation modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p
+        style="font-size:var(--fs-sm);color:var(--text-tertiary);margin-bottom:var(--space-4);font-family:var(--font-ui)">
+        BibTeX Citation</p>
+      <pre class="citation-modal__code">@inproceedings{baidya2024uav,
+  title     = {Enhanced UAV Tracking through Multi-Sensor
+               Fusion and Extended Kalman Filtering},
+  author    = {Baidya, Bodhisattwa and Mondal, Atanu and
+               Manna, Sarbajit and Das, Gourab and
+               Santra, Anirban and Chakraborty, Arkaprava},
+  booktitle = {CEUR Workshop Proceedings},
+  volume    = {3900},
+  year      = {2024}
+}</pre>
+      <button class="btn btn--primary btn--sm citation-modal__copy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        Copy Citation
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SKILLS SECTION — with technology icons from devicon CDN
+       ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">05 / Skills</p>
+        <h2 class="section__title">Technical Expertise</h2>
+        <p class="section__subtitle">A structured view of the tools, languages, and frameworks I work with.</p>
+      </div>
+
+      <div class="skills__grid stagger-children">
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Programming</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Systems & Scripting">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="" loading="lazy">C
+            </span>
+            <span class="skill-chip" data-tooltip="Object-Oriented Programming">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt=""
+                loading="lazy">C++
+            </span>
+            <span class="skill-chip" data-tooltip="Primary Language">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""
+                loading="lazy">Python
+            </span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">ML / Deep Learning</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Deep Learning Framework">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                alt="" loading="lazy">TensorFlow
+            </span>
+            <span class="skill-chip" data-tooltip="Deep Learning Framework">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt=""
+                loading="lazy">PyTorch
+            </span>
+            <span class="skill-chip" data-tooltip="High-Level Neural Network API">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg" alt=""
+                loading="lazy">Keras
+            </span>
+            <span class="skill-chip" data-tooltip="Machine Learning Library">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                alt="" loading="lazy">Scikit-learn
+            </span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Computer Vision / NLP</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Computer Vision Library">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt=""
+                loading="lazy">OpenCV
+            </span>
+            <span class="skill-chip" data-tooltip="ML Solutions for Vision & Pose">MediaPipe</span>
+            <span class="skill-chip" data-tooltip="Object Detection">YOLO</span>
+            <span class="skill-chip" data-tooltip="Natural Language Processing">NLTK</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Models / Architectures</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Convolutional Neural Network">CNN</span>
+            <span class="skill-chip" data-tooltip="Image Classification">ResNet-50</span>
+            <span class="skill-chip" data-tooltip="Face Recognition">InsightFace</span>
+            <span class="skill-chip" data-tooltip="Pathology Foundation Model">H-Optimus-Zero</span>
+            <span class="skill-chip" data-tooltip="Pathology Foundation Model">Phikon v2</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Data Science</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Data Manipulation">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt=""
+                loading="lazy">Pandas
+            </span>
+            <span class="skill-chip" data-tooltip="Numerical Computing">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt=""
+                loading="lazy">NumPy
+            </span>
+            <span class="skill-chip" data-tooltip="Data Visualization">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                alt="" loading="lazy">Matplotlib
+            </span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Web Development</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""
+                loading="lazy">HTML
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""
+                loading="lazy">CSS
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="" loading="lazy">JavaScript
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""
+                loading="lazy">React
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt=""
+                loading="lazy">Django
+            </span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Databases</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip" data-tooltip="Relational Database">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""
+                loading="lazy">MySQL
+            </span>
+            <span class="skill-chip" data-tooltip="NoSQL Database">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt=""
+                loading="lazy">MongoDB
+            </span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">Tools &amp; Platforms</h3>
+          <div class="skill-group__chips">
+            <span class="skill-chip">Google Colab</span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""
+                loading="lazy">Git
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""
+                loading="lazy">GitHub
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""
+                loading="lazy">VS Code
+            </span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" alt=""
+                loading="lazy">PyCharm
+            </span>
+            <span class="skill-chip">Windows</span>
+            <span class="skill-chip">
+              <img class="skill-chip__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt=""
+                loading="lazy">Linux
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section id="education" class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">06 / Education</p>
+        <h2 class="section__title">Academic Background</h2>
+      </div>
+
+      <div class="education__grid stagger-children">
+        <div class="edu-card reveal">
+          <div class="edu-card__top">
+            <!-- TODO: Replace with official Ramakrishna Mission Vidyamandira logo at assets/logos/institutions/rkmv.png -->
+            <div class="edu-card__logo" data-tooltip="RKM Vidyamandira, Belur Math">
+              <img src="assets/logos/institutions/rkm logo1.png" alt="RKM" class="nav__logo-img">
+
+            </div>
+            <div>
+              <h3 class="edu-card__degree">M.Sc. in Computer Science</h3>
+              <p class="edu-card__institution">Ramakrishna Mission Vidyamandira</p>
+              <p class="edu-card__institution">(A residential autonomous college affiliated with the University of
+                Calcutta)</p>
+            </div>
+          </div>
+          <p class="edu-card__sub">Belur Math, Howrah, West Bengal, India - 711202</p>
+          <div class="edu-card__meta">
+            <span class="edu-card__date">2024 – 2026</span>
+            <a href="assets/results/MSc_Provisional_Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__grade edu-card__link">Grade : A+ </a>
+            <a href="assets/results/MSc_Provisional_Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__cgpa edu-card__link">CGPA: 8.50 / 10</a>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__top">
+            <!-- TODO: Replace with official GGDC Singur logo at assets/logos/institutions/ggdc.png -->
+            <div class="edu-card__logo" data-tooltip="Govt. General Degree College, Singur">
+              <img src="assets/logos/institutions/bu logo.png" alt="GGDC" class="nav__logo-img">
+
+            </div>
+            <div>
+              <h3 class="edu-card__degree">B.Sc. in Computer Science</h3>
+              <p class="edu-card__institution">Government General Degree College, Singur</p>
+            </div>
+          </div>
+          <p class="edu-card__sub">University of Burdwan</p>
+          <div class="edu-card__meta">
+            <span class="edu-card__date">2021 – 2024</span>
+            <a href="assets/results/BSc Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__grade edu-card__link">Grade : A </a>
+            <a href="assets/results/BSc Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__cgpa edu-card__link">CGPA: 7.67 / 10</a>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-card__top">
+            <!-- TODO: Replace with official WBCHSE logo at assets/logos/institutions/wbchse.png -->
+            <div class="edu-card__logo" data-tooltip="WBCHSE">
+              <img src="assets/logos/institutions/wbchse.png" alt="WBCHSE" class="nav__logo-img">
+
+            </div>
+            <div>
+              <h3 class="edu-card__degree">Higher Secondary (Class XII)</h3>
+              <p class="edu-card__institution">Sheakhala Benimadhab High School (H.S)</p>
+            </div>
+          </div>
+          <p class="edu-card__sub">Sheakhala, Hooghly, West Bengal, India - 712706</p>
+          <div class="edu-card__meta">
+            <span class="edu-card__date">2019 – 2021</span>
+            <a href="assets/results/HS Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__grade edu-card__link">Grade : A+ </a>
+            <a href="assets/results/HS Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__cgpa edu-card__link">84.8%</a>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-card__top">
+            <!-- TODO: Replace with official WBBSE logo at assets/logos/institutions/wbbse.png -->
+            <div class="edu-card__logo" data-tooltip="WBBSE">
+              <img src="assets/logos/institutions/wbbse.png" alt="WBBSE" class="nav__logo-img">
+
+            </div>
+            <div>
+              <h3 class="edu-card__degree">Secondary (Class X)</h3>
+              <p class="edu-card__institution">Sheakhala Benimadhab High School (H.S)</p>
+            </div>
+          </div>
+          <p class="edu-card__sub">Sheakhala, Hooghly, West Bengal, India - 712706</p>
+          <div class="edu-card__meta">
+            <span class="edu-card__date">–2019</span>
+            <a href="assets/results/Madhyamik Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__grade edu-card__link">Grade : A+ </a>
+            <a href="assets/results/Madhyamik Certificate.pdf" target="_blank" rel="noopener noreferrer"
+              class="edu-card__cgpa edu-card__link">82.71%</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS & WORKSHOPS — CAROUSEL
+       ============================================================ -->
+  <section id="certifications" class="section section--alt"></section>
+  <section class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">07 / Certifications</p>
+        <h2 class="section__title">Certifications &amp; Workshops</h2>
+      </div>
+
+      <div class="cert-carousel reveal" id="certCarousel" role="region" aria-label="Certificate gallery"
+        aria-roledescription="carousel">
+
+        <div class="cert-carousel__viewport">
+          <div class="cert-carousel__track" id="certTrack">
+            <!-- Slides are dynamically generated from the JS certificates array -->
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="cert-carousel__arrow cert-carousel__arrow--prev" aria-label="Previous certificate"
+            id="certPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="cert-carousel__arrow cert-carousel__arrow--next" aria-label="Next certificate" id="certNext">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="9 6 15 12 9 18"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="cert-carousel__info" id="certInfo">
+          <div class="cert-carousel__details">
+            <h4 class="cert-carousel__title" id="certTitle">Next Generation Communication Technologies Using MATLAB
+              Tools</h4>
+            <p class="cert-carousel__org" id="certOrg">IIIT Una, Himachal Pradesh</p>
+          </div>
+          <span class="cert-carousel__meta" id="certMeta"></span>
+        </div>
+
+        <!-- Pagination -->
+        <div class="cert-carousel__pagination">
+          <div class="cert-carousel__dots" id="certDots"></div>
+          <span class="cert-carousel__counter" id="certCounter">1 / 9</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HONORS & ACHIEVEMENTS
+       ============================================================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Honors</p>
+        <h2 class="section__title">Honors &amp; Achievements</h2>
+      </div>
+
+      <div class="honors__grid stagger-children">
+
+        <!-- Winner — highlighted achievement -->
+        <div class="honor-card honor-card--highlight reveal">
+          <div class="edu-card__logo" data-tooltip="UEM Kolkata">
+            <img src="assets/logos/institutions/uem.png" alt="uem" class="nav__logo-img">
+
+          </div>
+          <div class="honor-card__ribbon" aria-hidden="true">Winner</div>
+          <div class="honor-card__content">
+            <h4 class="honor-card__title">Winner — Syntax Showdown</h4>
+            <p class="honor-card__event">Tech Kurukshetra '25</p>
+            <p class="honor-card__org">University of Engineering &amp; Management (UEM)</p>
+
+            <a href="assets/images/certificates/uem_certificate.jpg" class="timeline__link" target="_blank"
+              rel="noopener noreferrer">
+              Show Certificate
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+
+            <!--<a href="assets/images/certificates/uem_certificate.jpg" target="_blank" rel="noopener noreferrer"
+              class="honor-card__cert-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              Show Certificate
+            </a> -->
+          </div>
+        </div>
+
+        <!-- 1st runner up — highlighted achievement -->
+        <div class="honor-card honor-card--highlight reveal">
+          <div class="edu-card__logo" data-tooltip="rcc">
+            <img src="assets/logos/institutions/rcc.png" alt="rcc" class="nav__logo-img">
+
+
+          </div>
+          <div class="honor-card__ribbon honor-card__ribbon--runner" aria-hidden="true">1st Runner Up</div>
+          <div class="honor-card__content">
+            <h4 class="honor-card__title">1st runner up — Codathon</h4>
+            <p class="honor-card__event">TECHTRIX '25</p>
+            <p class="honor-card__org">RCC Institute of Information Technology</p>
+
+            <a href="assets/images/certificates/techtrix certificate.jpg" class="timeline__link" target="_blank"
+              rel="noopener noreferrer">
+              Show Certificate
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+
+            <!--<a href="assets/images/certificates/techtrix certificate.jpg" target="_blank" rel="noopener noreferrer"
+              class="honor-card__cert-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              Show Certificate
+            </a>-->
+
+          </div>
+        </div>
+
+        <!-- Professional Training -->
+        <!--
+        <div class="honor-card reveal">
+          <div class="honor-card__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="honor-card__content">
+            <h4 class="honor-card__title">Professional Training</h4>
+            <p class="honor-card__event">SCOA Warehouse Training Program</p>
+            <p class="honor-card__org">For Aspiring Professionals</p>
+          </div>
+        </div>
+      -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LANGUAGES
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Languages</p>
+        <h2 class="section__title">Languages</h2>
+      </div>
+
+      <div class="languages__list reveal">
+        <div class="lang-badge"><span class="lang-badge__name">English</span><span
+            class="lang-badge__level">Professional</span></div>
+        <div class="lang-badge"><span class="lang-badge__name">Hindi</span><span class="lang-badge__level">Native</span>
+        </div>
+        <div class="lang-badge"><span class="lang-badge__name">Bengali</span><span
+            class="lang-badge__level">Native</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PHOTOS SECTION
+       ============================================================ -->
+  <section id="photos" class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">08 / Photos</p>
+        <h2 class="section__title">Moments</h2>
+        <p class="section__subtitle">Personal, professional, academic, and project highlights captured over time.</p>
+      </div>
+
+      <div class="photos__gallery reveal">
+        <!--
+          TODO: Add your photos to assets/images/photos/
+          Then uncomment and update these items:-->
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani1.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">Offered at the Holy Feet of Thakur, Ma & Swamiji...🪷</span>
+          </div>
+        </div>
+
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani_belur.png" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">By the grace of Thakur, Ma, and Swamiji, I have learned my work at their
+              feet.</span>
+          </div>
+        </div>
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani2.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">Secured 2nd Position in the Technical Quiz Category in the IETE Eastern
+              Zonal Seminar, Theme on: IoT and Sustainable Society (IoTSS 2025) Organized by The Institution of
+              Electronics and Telecommunication Engineers, Kolkata Centre, ISF Eastern Zonal Seminar of IETE at
+              Dinabandhu Andrews Institute of Technology and Management, Patuli, Kolkata.</span>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani3.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">Organizer of "Computer Day 2025" with the Computer Society of India (CSI),
+              Kolkata Chapter on 3rd January 2026 at Ramakrishna Mission Vidyamandira, Belur Math, Howrah.
+            </span>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani4.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">14th Eastern India Information Technology Fair 2025 (EIITF) , held on 5th
+              September 2025 at THE PARK HOTEL, Kolkata, on the theme “Connecting the Physical and Digital
+              Worlds.”</span>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani5.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">14th Eastern India Information Technology Fair 2025 (EIITF) , held on 5th
+              September 2025 at THE PARK HOTEL, Kolkata, on the theme “Connecting the Physical and Digital
+              Worlds.”</span>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="assets/images/photos/syntax showdown.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">WINNER - Syntax Showdown under Tech Tech Kurukshetra '25 at University of
+              Engineering & Management (UEM)</span>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="assets/images/photos/techtrix.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">1st runner up — Codathon under TECHTRIX '25 at RCC Institute of
+              Information Technology, Kolkata</span>
+          </div>
+        </div>
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani_iit1.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">IIT Kharagpur '25</span>
+          </div>
+        </div>
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani_iit2.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">IIT Kharagpur '25</span>
+          </div>
+        </div>
+
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani_iit3.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">IIT Kharagpur '25</span>
+          </div>
+        </div>
+
+
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani_iit4.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">IIT Kharagpur '25</span>
+          </div>
+        </div>
+
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/isi.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">Indian Statistical Institute, Kolkata</span>
+          </div>
+        </div>
+
+
+
+
+        <div class="photo-item">
+          <img src="assets/images/photos/ani6.jpg" alt="Description" loading="lazy">
+          <div class="photo-item__overlay">
+            <span class="photo-item__caption">Sunset</span>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Empty state — shown when no photos are available -->
+        <div class="photos__empty">
+          <svg class="photos__empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <p class="photos__empty-text">More moments coming soon.</p>
+          <!--<p class="photos__empty-sub">Add photos to assets/images/photos/ to populate this gallery.</p>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">09 / Contact</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Left: Info -->
+        <div>
+          <h2 class="contact__headline reveal">Let's Build Something Intelligent.</h2>
+          <p class="contact__text reveal reveal-delay-1">
+            Open to conversations around AI/ML, computer vision, research, software development, and meaningful
+            technology projects.
+          </p>
+
+          <div class="contact__methods reveal reveal-delay-2">
+            <a href="mailto:anirbansantraofficial@gmail.com" class="contact__method" data-tooltip="Send an email">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__method-label">Email</p>
+                <p class="contact__method-value">anirbansantraofficial@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anirban-santra-/" class="contact__method" target="_blank"
+              rel="noopener noreferrer" data-tooltip="Connect on LinkedIn">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__method-label">LinkedIn</p>
+                <p class="contact__method-value">linkedin.com/in/anirban-santra-</p>
+              </div>
+            </a>
+
+            <a href="https://orcid.org/0009-0008-6003-2393" class="contact__method" target="_blank"
+              rel="noopener noreferrer" data-tooltip="View ORCID Profile">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <text x="12" y="16" text-anchor="middle" font-size="8" font-family="Arial, sans-serif"
+                    font-weight="bold" fill="white">iD</text>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__method-label">ORCID</p>
+                <p class="contact__method-value">orcid.org/0009-0008-6003-2393</p>
+              </div>
+            </a>
+
+
+            <a href="https://scholar.google.com/citations?hl=en&user=GCUwURkAAAAJ" class="contact__method"
+              target="_blank" rel="noopener noreferrer" data-tooltip="View publications">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__method-label">Google Scholar</p>
+                <p class="contact__method-value">View Publications</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- India Map — Greater Kolkata Area -->
+
+          <div class="contact__map reveal reveal-delay-3">
+            <img src="assets/images/footer/india_map.png" alt="Contact" class="contact__map-img">
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Right: Contact Form -->
+        <div class="reveal reveal-delay-2">
+          <!--
+            ============================================================
+            CONTACT FORM — FRONTEND ONLY
+            ============================================================
+            This form currently has no backend. To make it functional,
+            connect it to one of the following services:
+
+            1. Formspree      — https://formspree.io
+               Set form action="https://formspree.io/f/YOUR_ID" method="POST"
+
+            2. Netlify Forms   — https://docs.netlify.com/forms/setup/
+               Add netlify attribute to <form> tag
+
+            3. EmailJS         — https://www.emailjs.com
+               Use their JS SDK to send emails directly from frontend
+
+            4. Web3Forms       — https://web3forms.com
+               Set form action with their API endpoint
+
+            Until connected, the form will show a confirmation message
+            but will not actually send any data.
+            ============================================================
+          -->
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required
+                autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell me about your project or idea..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Send Message
+            </button>
+            <p class="form__notice">Thank you for your message. I will get back to you soon! </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer Signature Section -->
+      <div class="footer__top">
+        <div class="footer__logo" aria-hidden="true">
+          <img src="assets/images/footer/ani_logo.png" alt="Logo" class="footer__logo-img">
+        </div>
+        <p class="footer__signature">Anirban Santra</p>
+        <p class="footer__role">AI/ML Engineer &amp; Software Developer</p>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__info">
+          <p class="footer__name">Anirban | অনির্বাণ | अनिर्वाण | ଅନିର୍ବାଣ | ਅਨਿਰਵਾਣ | અનિર્વાણ | ಅನಿರ್ವಾಣ | అనిర్వాణ్ |
+            அனிர்வாண் | അനിർവാൺ </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/anirban-santra-/" class="footer__icon-btn" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="Connect on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+
+          <a href="https://scholar.google.com/citations?hl=en&user=GCUwURkAAAAJ" class="footer__icon-btn"
+            target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" data-tooltip="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://orcid.org/0009-0008-6003-2393" class="footer__icon-btn" target="_blank"
+            rel="noopener noreferrer" aria-label="ORCID" data-tooltip="ORCID">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10"></circle>
+              <text x="12" y="16" text-anchor="middle" font-size="9" font-family="Arial, sans-serif" font-weight="bold"
+                fill="white">iD</text>
+            </svg>
+          </a>
+          <a href="mailto:anirbansantraofficial@gmail.com" class="footer__icon-btn" aria-label="Email"
+            data-tooltip="Send email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Anirban Santra. All rights reserved.</p>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#photos">Photos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <p>Designed &amp; Built by Anirban Santra ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Photo Lightbox -->
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-label="Photo lightbox" aria-modal="true">
+    <div class="photo-lightbox__content">
+      <button class="photo-lightbox__close" aria-label="Close lightbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img class="photo-lightbox__img" id="lightboxImg" src="" alt="">
+      <p class="photo-lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
